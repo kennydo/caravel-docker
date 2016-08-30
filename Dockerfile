@@ -1,7 +1,7 @@
 FROM python:2.7.11
 
 # Install caravel
-RUN pip install caravel
+RUN pip install caravel sqlalchemy-redshift
 
 # copy admin password details to /caravel for fabmanager
 RUN mkdir /caravel
